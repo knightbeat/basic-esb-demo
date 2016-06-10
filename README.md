@@ -29,7 +29,7 @@
      - `docker exec -it esb.example.com tailf wso2/wso2esb-4.9.0/repository/logs/wso2carbon.log`
   3. Login to the web based admin management console
      - use `admin` and `admin` as username and password
-     - Open [https://docker.machine:9444/carbon](https://docker.machine:9444/carbon)
+     - Open [https://docker.machine:9443/carbon](https://docker.machine:9443/carbon)
   4. Upload the CAR file (artifacts)
      - Go to `Main > Manage > Carbon Applications > Add`
      - Upload `articats/0002BasicCARProject_1.0.0.car` file
@@ -42,9 +42,11 @@
 **Run the sample**
 
   1. Start a REST client like [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
-  2. Add `http://docker.machine:8281/stocks/quote/<any symbol>`
-     - i.e. `http://docker.machine:8281/stocks/quote/WSO2`
+  2. Add `http://docker.machine:8280/stocks/quote/<any symbol>`
+     - i.e. `http://docker.machine:8280/stocks/quote/WSO2`
   3. Invoke and observe the response
   4. Add header `Accept` with value `application/json`
-  5. Invoke and observe the response
+  5. Invoke and observe the response and ESB logs
+  6. Add header `Accept` with value `application/XML`
+  7. Invoke and observe the response and ESB logs
   
