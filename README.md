@@ -47,6 +47,6 @@
   3. Invoke and observe the response
   4. Add header `Accept` with value `application/json`
   5. Invoke and observe the response and ESB logs
-  6. Add header `Accept` with value `application/XML`
+  6. Add header `Accept` with value `application/xml`
   7. Invoke and observe the response and ESB logs
   
